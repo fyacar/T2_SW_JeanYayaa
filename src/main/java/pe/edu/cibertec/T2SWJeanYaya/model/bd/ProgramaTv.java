@@ -15,5 +15,12 @@ import java.util.Date;
 @Entity
 @Table(name="ProgramaTv")
 public class ProgramaTv {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer idprogramatv;
+    private String titulo;
+    private String resumen;
+    private Date fechainicio;
+    private Integer idpersonaje;
 
 }
